@@ -5,17 +5,17 @@ import java.util.logging.Logger;
 
 
 public class WaitNotify {
-    
+    private Object lock = new Object();
     public void thread1Fonksiyonu(){
         
-        synchronized(this){
+        synchronized(lock){
             
             System.out.println("Thread 1 çalışıyor...");
             
             System.out.println("Thread 1 Thread 2 nin kendisini uyandırmasını bekliyor...");
             
             try {
-                wait();
+                lock.wait();
             } catch (InterruptedException ex) {
                 Logger.getLogger(WaitNotify.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -33,7 +33,7 @@ public class WaitNotify {
             Logger.getLogger(WaitNotify.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        synchronized(this){
+        synchronized(lock){
             System.out.println("Thread 2 çalışıyor...");
             
             System.out.println("Devam etmek için bir tuşa basın...");
@@ -42,7 +42,7 @@ public class WaitNotify {
             scanner.nextLine();
             
             
-           notify();
+           lock.notify();
             
             System.out.println("Uayandırdım ben gidiyorum ama 2 sn bekle...");
             
