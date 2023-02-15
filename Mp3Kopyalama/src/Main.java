@@ -56,9 +56,16 @@ public class Main {
         kopyala("marş2.mp3");
         kopyala("marş3.mp3");
         kopyala("marş4.mp3");
+        kopyala("marş5.mp3");
+        kopyala("marş6.mp3");
+        kopyala("marş7.mp3");
+        kopyala("marş8.mp3");
+        kopyala("marş9.mp3");
+        kopyala("marş10.mp3");
+        kopyala("marş11.mp3");
         long bitis = System.currentTimeMillis();
         
-        System.out.println("3 dosyanın kopyalanması şu kadar sürdü : " + (bitis - baslangic)/1000 + "sn");
+        System.out.println("10 dosyanın kopyalanması şu kadar sürdü : " + (bitis - baslangic)/1000 + "sn");
         
     }
     
