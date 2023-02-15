@@ -48,7 +48,11 @@ public class WebSayfasi extends javax.swing.JFrame {
             }
         });
 
-        web_sayfasi.setText("jTextField1");
+        web_sayfasi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                web_sayfasiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,6 +99,10 @@ public class WebSayfasi extends javax.swing.JFrame {
             Logger.getLogger(WebSayfasi.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_tikla_butonuActionPerformed
+
+    private void web_sayfasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_web_sayfasiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_web_sayfasiActionPerformed
 
     /**
      * @param args the command line arguments
