@@ -112,7 +112,7 @@ public class KelimeveHarfSayisi extends javax.swing.JFrame {
         kelime_alani.setText("Kelime Sayisi : " + kelime_sayisi);
         harf_alani.setText("Harf Sayisi : " + karakter_sayisi);
         
-        JOptionPane.showMessageDialog(this,yazi);
+        //JOptionPane.showMessageDialog(this,yazi);
     }//GEN-LAST:event_gösterActionPerformed
 
     /**
